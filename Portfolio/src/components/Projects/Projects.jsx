@@ -4,8 +4,10 @@ import ProjectCard from "./ProjectCard";
 import { projectOne, projectThree, projectTwo } from "../../assets/images";
 const Projects = () => {
   return (
-    <section className="h-screen  mt-10" id="projects">
-      <Title title={"VISIT MY PROJECTS"} desc={"My Projects"} />
+    <section className="h-auto mb-4  mt-10" id="projects">
+      <div className="text-center">
+        <Title title={"VISIT MY PROJECTS"} desc={"My Projects"} />
+      </div>
       <div className="grid grid-cols-3 gap-20">
         <ProjectCard
           title={`TypingTest`}

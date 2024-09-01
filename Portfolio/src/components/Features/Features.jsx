@@ -16,7 +16,9 @@ const Features = () => {
       id="features"
       className="w-full h-full pt-10 pb-20 border-b-[1px] border-b-black font-titleFont"
     >
-      <Title title={"Features"} desc={"What I do"} />
+      <div className="text-center">
+        <Title title={"Features"} desc={"What I do"} />
+      </div>
       <div className="grid grid-cols-3 gap-20">
         <Card
           Icon={FaServer}
