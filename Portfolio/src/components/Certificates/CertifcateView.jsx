@@ -85,7 +85,7 @@ const CertificateView = () => {
   };
 
   return (
-    <section id="testimonial" className="w-full h-screen">
+    <section id="certi" className="w-full h-screen">
       <div className="flex justify-center items-center text-center">
         <Title title="Awards & Achievements" desc="Certifications" />
       </div>

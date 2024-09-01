@@ -5,6 +5,7 @@ import Projects from "./components/Projects/Projects";
 import Resume from "./components/Resume/Resume";
 import React from "react";
 import CertificateView from "./components/Certificates/CertifcateView";
+import Contact from "./components/contact/Contact";
 function App() {
   return (
     <div className="w-full h-auto bg-bodyColor text-lightText">
@@ -16,6 +17,7 @@ function App() {
         <Projects />
         <Resume />
         <CertificateView />
+        <Contact />
       </div>
     </div>
   );

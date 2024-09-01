@@ -5,12 +5,12 @@ import Skills from "./Skills";
 import { useState } from "react";
 
 const Resume = () => {
-  const [show, setShow] = useState("education");
+  const [show, setShow] = useState("skills");
   const handleChangeTab = (item) => {
     setShow(item);
   };
   return (
-    <div id="resume" className="w-full py-20 border-b-[1px] border-b-black">
+    <div id="resume" className="w-full py-20">
       <div className="text-center">
         <Title
           desc={"My Resume"}
@@ -20,16 +20,6 @@ const Resume = () => {
       <div className="flex justify-center w-full">
         <ul className="w-[40%] ml-auto mr-auto grid grid-cols-2">
           <li
-            onClick={() => handleChangeTab("education")}
-            className={`resumeLi ${
-              show === "education"
-                ? "border-designColor border-solid border-1 rounded-lg"
-                : ""
-            }`}
-          >
-            Education
-          </li>
-          <li
             onClick={() => handleChangeTab("skills")}
             className={`resumeLi ${
               show === "skills"
@@ -38,6 +28,16 @@ const Resume = () => {
             }`}
           >
             Professional Skills
+          </li>
+          <li
+            onClick={() => handleChangeTab("education")}
+            className={`resumeLi ${
+              show === "education"
+                ? "border-designColor border-solid border-1 rounded-lg"
+                : ""
+            }`}
+          >
+            Education
           </li>
           {/* <li
             onClick={() => handleChangeTab("achievements")}
