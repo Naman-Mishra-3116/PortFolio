@@ -9,7 +9,6 @@ const Banner = () => {
       className="w-full py-20 flex items-center border-b-[1px] justify-between border-b-black font-titleFont"
     >
       <LeftBanner />
-
       <RightBanner />
     </section>
   );
