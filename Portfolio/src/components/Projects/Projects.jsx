@@ -1,7 +1,7 @@
 import React from "react";
 import Title from "../layouts/Title";
 import ProjectCard from "./ProjectCard";
-import { projectOne, projectThree, projectTwo } from "../../assets/images";
+import { projects } from "../../constants/projectData";
 const Projects = () => {
   return (
     <section className="h-auto mb-4  mt-10" id="projects">
@@ -9,21 +9,19 @@ const Projects = () => {
         <Title title={"VISIT MY PROJECTS"} desc={"My Projects"} />
       </div>
       <div className="grid grid-cols-3 gap-20">
-        <ProjectCard
-          title={`TypingTest`}
-          desc={`Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus repellendus officiis eaque? Doloremque in eius provident non molestiae animi quia?`}
-          src={projectOne}
-        />
-        <ProjectCard
-          title={`Online Doctor Clinic`}
-          desc={`Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus repellendus officiis eaque? Doloremque in eius provident non molestiae animi quia?`}
-          src={projectTwo}
-        />
-        <ProjectCard
-          title={`Speechify React`}
-          desc={`Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus repellendus officiis eaque? Doloremque in eius provident non molestiae animi quia?`}
-          src={projectThree}
-        />
+        {projects.map((item, index) => {
+          return (
+            <ProjectCard
+              key={index}
+              title={item.title}
+              desc={item.desc}
+              src={item.image}
+              live={item.liveLink}
+              team={item.teamSize}
+              duration={item.duration}
+            />
+          );
+        })}
       </div>
       <p></p>
     </section>

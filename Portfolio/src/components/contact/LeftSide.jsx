@@ -20,10 +20,10 @@ const LeftSide = () => {
           Find me on
         </h2>
         <div className="flex gap-6">
-          <a href="">
+          <a href="https://x.com/mishr89057">
             <Icon Icon={FaTwitter} />
           </a>
-          <a href="https://www.google.com">
+          <a href="https://www.linkedin.com/in/naman-mishra-082555265">
             <Icon Icon={FaLinkedinIn} />
           </a>
         </div>

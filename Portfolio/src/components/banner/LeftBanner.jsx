@@ -50,10 +50,22 @@ const LeftBanner = () => {
             find me on
           </h2>
           <div className="grid grid-cols-2 gap-4">
-            <Icon Icon={FaGithub} />
-            <Icon Icon={FaLinkedin} />
-            <Icon Icon={FaTwitter} />
-            <Icon Icon={SiGmail} />
+            <a href="https://github.com/Naman-Mishra-3116">
+              {" "}
+              <Icon Icon={FaGithub} />
+            </a>
+            <a href="https://www.linkedin.com/in/naman-mishra-082555265/">
+              <Icon Icon={FaLinkedin} />
+            </a>
+            <a href="https://x.com/mishr89057">
+              <Icon Icon={FaTwitter} />
+            </a>
+            {/* <a href="">
+              <Icon Icon={SiGmail} />
+            </a> */}
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=namanmishra3116@gmail.com">
+              <Icon Icon={SiGmail} />
+            </a>
           </div>
         </div>
         <div className="mr-[60px]">
